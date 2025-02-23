@@ -30,4 +30,4 @@ build
 profiles/*
 
 .DS_Store
-.iml
+*.iml
