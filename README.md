@@ -1,6 +1,6 @@
-# Chromium Websocket Proxy
+# Reverse Chromium Websocket Proxy
 
-Welcome to **Reverse Chromium WebSocket Proxy**! 🎉
+Welcome to **Reverse Chromium WebSocket Proxy**!
 
 This open-source project serves as a scalable reverse WebSocket proxy designed to manage a pool of **Chromium browsers** seamlessly. If you’ve ever worked with **Puppeteer** or any browser automation library and struggled with managing browser instances efficiently, this tool is for you.
 
