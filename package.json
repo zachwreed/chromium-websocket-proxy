@@ -1,0 +1,18 @@
+{
+  "name": "chromium-websocket-proxy",
+  "version": "1.0.19",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:client": "node scripts/client.mjs",
+    "test": "go test $(go list ./... | grep -v /test/)",
+    "test:coverage": "go test $(go list ./... | grep -v /test/) -coverprofile coverage.out && go tool cover -func coverage.out",
+    "go:build": "GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -o build/chromium-websocket-proxy .",
+    "docker:build": "docker build . --tag chromium-websocket-proxy:latest",
+    "docker:build:extended": "docker build -f extended.Dockerfile . --tag chromium-websocket-proxy-extended:latest"
+  },
+  "dependencies": {
+    "dotenv": "16.3.1",
+    "puppeteer": "24.2.1"
+  }
+}
